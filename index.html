@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="index.js"></script>
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-[#1F2632] text-center font-['Manrope']">
+    <main
+      class="container w-[90%] min-h-[200px] sm:w-[40%] mx-auto my-[30%] bg-[#323A49] p-10 rounded-xl relative"
+    >
+      <p class="text-[#52FFA8] mb-10">Advice #<span id="number"></span></p>
+      <h1 class="text-[#CEE3E9] text-2xl mb-10">
+        "<span id="advice">Click the button below to get an advice</span>"
+      </h1>
+      <div
+        class="w-full h-4 bg-[url('images/pattern-divider-mobile.svg')] sm:bg-[url('images/pattern-divider-desktop.svg')] bg-center mb-10"
+      ></div>
+      <button
+        id="get-advice"
+        class="w-16 h-16 rounded-full bg-[#52FFA8] flex items-center justify-center mx-auto mb-[-70px] hover:shadow-[0px_0px_30px_5px_rgba(0,255,128)]"
+      >
+        <img src="images/icon-dice.svg" alt="" />
+      </button>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://webcouture.com.ng">Olawole O.M</a>.
+    </footer>
+  </body>
+</html>
